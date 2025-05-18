@@ -1,4 +1,5 @@
 import CoverParticles from "@/components/coverParticles";
+import Introduction from "@/components/introduction";
 import TransitionPage from "@/components/transitionPage";
 
 
@@ -8,7 +9,7 @@ export default function Home() {
       <TransitionPage />
       <div className="flex min-h-[100vh] h-full bg-no-repeat bg-[linear-gradient(90.21deg,rgba(175,54,78,0.5)_-5.91%,rgba(189,47,109,0.1)_111.58%)]">
         <CoverParticles />
-        <p>A</p>
+        <Introduction />
       </div>
     </main>
   );
