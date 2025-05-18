@@ -43,3 +43,23 @@ next-env.d.ts
 # testing
 tailwind.config.ts
 data.tsx
+
+# testing images
+/public/avatar-1.png
+/public/avatar-works.png
+/public/circles.png
+/public/home-4.png
+/public/image-1.jpg
+/public/image-2.jpg
+/public/image-3.jpg
+/public/image-4.jpg
+/public/rounded-text.png
+/public/services.png
+/public/work-1.jpeg
+/public/work-2.jpeg
+/public/work-3.jpeg
+/public/work-4.jpeg
+/public/work-5.jpeg
+
+# not used yet
+/utils/motionTransitions.tsx
