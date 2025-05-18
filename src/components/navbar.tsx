@@ -2,11 +2,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { itemsNavbar } from "../../data";
+import MotionTransition from "./transitionComponent";
 
 const Navbar = () => {
   const router = usePathname();
   return ( 
-    <div className="fixed z-40 left-5 top-1/2 -translate-y-1/2 flex flex-col 
+    <MotionTransition position="bottom" className="fixed z-40 left-5 top-1/2 -translate-y-1/2 flex flex-col 
       items-center justify-center h-max w-max">
       <nav>
         <div className="flex items-center justify-center gap-2 
@@ -23,7 +24,7 @@ const Navbar = () => {
         ))}
         </div>
       </nav>
-    </div>
+    </MotionTransition>
   );
 }
  
