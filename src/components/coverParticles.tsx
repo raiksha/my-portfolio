@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    init && <div className="w-[0px]">
+    init && <div className="absolute w-[0px]">
       <Particles
       id="tsparticles"
       options={{

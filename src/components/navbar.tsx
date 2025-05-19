@@ -13,14 +13,16 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-2 
           rounded-full bg-white/15 background-blur-sm flex-col">
         {itemsNavbar.map((item) => (
-          <div key={item.id} className={`px-3 py-3 rounded-full cursor-pointer 
-            transition-colors duration-150 
-            hover:bg-white/50 
-            ${router === item.link ? "bg-white/40" : "bg-transparent"}`}
-            data-tooltip-target="tooltip-default"
-          >
-            <Link href={item.link}>{item.icon}</Link>
-          </div>  
+          <Link key={item.id} href={item.link}>
+            <div className={`px-3 py-3 rounded-full cursor-pointer 
+              transition-colors duration-150 
+              hover:bg-white/50 
+              ${router === item.link ? "bg-white/40" : "bg-transparent"}`}
+              data-tooltip-target="tooltip-default"
+            >
+              {item.icon}
+            </div>
+          </Link>  
         ))}
         </div>
       </nav>
